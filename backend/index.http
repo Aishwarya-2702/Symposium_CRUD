@@ -1,0 +1,24 @@
+GET http://localhost:1995/fetch
+
+POST http://localhost:1995/new
+content-type: application/json
+
+{
+    "Participant_id":"4",
+    "Participant_name":"Sai",
+    "Department":"Mech", 
+    "Event_name":"seminar",
+    "Venue":"PJ Lab",
+    "Winner":"1st prize"
+}
+ 
+
+PUT http://localhost:1995/change/2
+Content-Type: application/json
+
+{
+    "Event_name":"Electricals",
+    "Venue":"SS Lab"
+}
+
+DELETE http://localhost:1995/delkey/4
